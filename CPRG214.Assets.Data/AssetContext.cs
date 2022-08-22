@@ -12,9 +12,11 @@ namespace CPRG214.Assets.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Change the connection string here for your computer
-            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS; 
+            /*optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS; 
                                         Database=ElectronicAssets; 
-                                        Trusted_Connection=True;");
+                                        Trusted_Connection=True;");*/
+            optionsBuilder.UseMySQL("Server=us-cdbr-east-06.cleardb.net; Port=3306; DataBase=heroku_f97f052e16a4f15; " +
+                                    "Uid=bb6b78f46014d8; Pwd=0a1182ec" );
         }
 
         // Create a database with informaiton provided
