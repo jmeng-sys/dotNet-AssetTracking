@@ -189,12 +189,12 @@ namespace CPRG214.Assets.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("AssetType");
+                    //b.Navigation("AssetType");
                 });
 
             modelBuilder.Entity("CPRG214.Assets.Domain.AssetType", b =>
                 {
-                    b.Navigation("Assets");
+                    //b.Navigation("Assets");
                 });
 #pragma warning restore 612, 618
         }
